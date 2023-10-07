@@ -3,20 +3,56 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Ken's Website</title>
-    <link rel = "icon"  type = "image/x-con" href = "">
+    <title>Ken's Personal Website</title>
+    <link rel = "icon"  type = "image/x-con" href = "./img/favicon.png">
     <link rel="stylesheet" href="style.css">
-    <script language="JavaScript" type ="text/javascript" src ="js/main.js"></script>
+    <script src ="js/main.js"></script>
   </head>
 
   <body>
     <div id = "welcome-container">
-      <div id = "welcome-container-inner">
+      <div id = "welcome-container" class = "container-inner-column" >
         <h1 id = "welcome-text"> Welcome to my webpage...</h1>
         <button id = "welcome-button">
           <p id = "welcome-arrow" onclick="transition()">&#8595;</p>
         </button>
       </div>
+    </div>
+
+    <div id = "main-container">
+      <nav id = "nav-container">
+        <nav id = "nav-container" class = "container-inner-row">
+          <ul id = "nav-links">
+            <li id ="current-page"> About </li>
+            <li class = "available-page"><a href = "./skills.html"> Skills </a></li>
+            <li class = "available-page"><a href = "./socials.html"> Socials </a></li>
+          </ul>
+        </nav>
+      </nav>
+      <div id = "main-container" class = "container-inner-row">
+        <div id = "profile-container">
+          <div id = "profile-container" class = "container-inner-column">
+            <img id="profile-picture" src="img/pfp.jpg">
+            <h1 id = "name" class="text-centered" >Ken Liu</h1>
+            <h2 id = "title" class="text-centered">Software Engineer Undergraduate</h2>
+            <a href = "https://www.linkedin.com/in/ken-liu-4746a5263/" target = "_blank" ><img class = "social-icons" src = "img/linkedin.png"></a>
+            <a href= "https://github.com/Ken-Calgary" target = "_blank"><img class = "social-icons" src = "img/github.png"></a>
+            <a href = "https://open.spotify.com/user/osp4pl1ysuzptdgzexvr2kfe0?si=a316609938bd4a34" target = "_blank"><img class = "social-icons" src = "img/spotify.png"></a>
+            <a href = "https://www.instagram.com/potatoosoul/" target = "_blank"><img class = "social-icons" src = "img/instagram.png"></a>
+          </div>
+        </div>
+        <div id="content-container" class = "container-inner-column">
+          <h1>About Me</h1>
+          <p>
+            An upcoming Software Engineer studying at the University of Calgary.<br>
+            My hobbies consist of watching anime, ranging from slice of life, shounen, and many more, as well
+            as having
+          </p>
+        </div>
+      </div>
+      <footer id = "copyright" class = "container-inner-column">
+        <p id = "copyright-text"> &#169; Copyright 2023 </p>
+      </footer>
     </div>
   </body>
 </html>
