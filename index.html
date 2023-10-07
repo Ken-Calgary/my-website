@@ -12,42 +12,64 @@
   <body>
     <div id = "welcome-container">
       <div id = "welcome-container" class = "container-inner-column" >
-        <h1 id = "welcome-text"> Welcome to my webpage...</h1>
+        <h1 id = "welcome-text"> Welcome To My Website...</h1>
         <button id = "welcome-button">
           <p id = "welcome-arrow" onclick="transition()">&#8595;</p>
         </button>
       </div>
     </div>
 
-    <div id = "main-container">
-      <nav id = "nav-container">
-        <nav id = "nav-container" class = "container-inner-row">
-          <ul id = "nav-links">
-            <li id ="current-page"> About </li>
-            <li class = "available-page"><a href = "./skills.html"> Skills </a></li>
-            <li class = "available-page"><a href = "./socials.html"> Socials </a></li>
-          </ul>
-        </nav>
-      </nav>
+    <div id = "main-container" class = "day-theme">
+      <header id = "header-container">
+        <header id = "header-container" class = "container-inner-row">
+          <button id = "theme-toggler" onclick="toggleTheme()">&#9681;</button>
+        </header>
+      </header>
       <div id = "main-container" class = "container-inner-row">
         <div id = "profile-container">
           <div id = "profile-container" class = "container-inner-column">
             <img id="profile-picture" src="img/pfp.jpg">
             <h1 id = "name" class="text-centered" >Ken Liu</h1>
             <h2 id = "title" class="text-centered">Software Engineer Undergraduate</h2>
-            <a href = "https://www.linkedin.com/in/ken-liu-4746a5263/" target = "_blank" ><img class = "social-icons" src = "img/linkedin.png"></a>
-            <a href= "https://github.com/Ken-Calgary" target = "_blank"><img class = "social-icons" src = "img/github.png"></a>
-            <a href = "https://open.spotify.com/user/osp4pl1ysuzptdgzexvr2kfe0?si=a316609938bd4a34" target = "_blank"><img class = "social-icons" src = "img/spotify.png"></a>
-            <a href = "https://www.instagram.com/potatoosoul/" target = "_blank"><img class = "social-icons" src = "img/instagram.png"></a>
+            <h1 id = "socials" class = "text-centered"> My Socials </h1>
+            <div id = "social-container" class = "container-inner-row">
+              <a href = "https://www.linkedin.com/in/ken-liu-4746a5263/" target = "_blank" ><img class = "social-icons" src = "img/linkedin.png" alt = "LinkedIn"></a>
+              <a id = "github-icon" href= "https://github.com/Ken-Calgary" target = "_blank"><img class = "social-icons" src = "img/github.png" alt = "Github"></a>
+              <a href = "https://www.instagram.com/potatoosoul/" target = "_blank"><img class = "social-icons" src = "img/instagram.png" alt = "Instagram"></a>
+              <a href = "https://open.spotify.com/user/osp4pl1ysuzptdgzexvr2kfe0?si=a316609938bd4a34" target = "_blank"><img class = "social-icons" src = "img/spotify.png" alt = "Spotify"></a>
+            </div>
           </div>
         </div>
-        <div id="content-container" class = "container-inner-column">
-          <h1>About Me</h1>
-          <p>
-            An upcoming Software Engineer studying at the University of Calgary.<br>
-            My hobbies consist of watching anime, ranging from slice of life, shounen, and many more, as well
-            as having
-          </p>
+        <div id = "content-container">
+          <div id="content-container" class = "container-inner-column">
+            <div id = "about-container" class = "container-inner-column">
+              <h1 class = "text-centered"> About Me </h1>
+              <p class = "content-text">
+                An upcoming Software Engineer studying at the University of Calgary.<br>
+                My expected graduation is in the year 2025. My hobbies consist of watching anime, playing games,<br>
+                and learning just about anything.
+              </p>
+            </div>
+            <div id = "skill-container" class = "container-inner-column">
+              <h1 class = "text-centered"> Skills </h1>
+              <p class = "content-text">
+                The main programming langauges I can work with are as of the following:
+              </p>
+              <ul >
+                <b>
+                  <li>Java</li>
+                  <li>C and C++</li>
+                  <li>Python</li>
+                  <li>HTML, CSS and JavaScript</li>
+                </b>
+              </ul>
+              <p class = "content-text">
+                I've also done school projects dealing with relational database program, such as, <b>MySQL</b>. <br>
+                This also includes learning about the <b>Agile</b> model. Not only that but I've dealt with a fair share of <br>
+                backend development, using <b>AWS</b> and <b>Terraform</b>.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
       <footer id = "copyright" class = "container-inner-column">
