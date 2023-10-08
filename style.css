@@ -10,7 +10,22 @@ html ,body {
   body > #main-container {
     height:auto;
   }
+
+  body > #welcome-container {
+    background-image: url("./img/mobileBackground.jpg");
+  }
+
+  h1#welcome-text {
+    font-size: 24px;
+    color: #FFFFFF;
+    -webkit-text-stroke-width: 0.75px;
+    -webkit-text-stroke-color: #000000;
+  }
   
+  h1#welcome-text:active {
+    color: #CCCCFF;
+  }
+
   #main-container-inner.container-row {
     flex-direction: column;
   }
@@ -44,10 +59,6 @@ html ,body {
     animation-duration: 2s;
 }
 
-#welcome-container.transition {
-    animation: slideOut 2s forwards;
-}
-
 .container-column {
     display:flex;
     flex-direction: column;
@@ -69,7 +80,9 @@ html ,body {
     font-size: 64px;
     user-select: none;
     text-align: center;
-    color:#E8E9EB;
+    color:#FFFFFF;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #000000;
 }
 
 #welcome-button {
@@ -78,12 +91,19 @@ html ,body {
     margin: 0;
     padding: 0;
 }
+
 #welcome-arrow {
     cursor:pointer;
     font-size: 64px;
     margin: 0;
     color:#E8E9EB;
     animation: arrowBounce 1.25s infinite;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #000000;
+}
+
+#welcome-arrow:hover {
+  color: #CCCCFF;
 }
 
 #header-container-inner.container-row {
@@ -91,10 +111,26 @@ html ,body {
 }
 
 #theme-toggler {
+  padding: none;
   font-size: 48px;
   background: none;
   border: none;
   cursor:pointer;
+}
+
+#sound-toggler {
+  size: 48px;
+  padding: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding-top:0;
+  margin-top: 0;
+}
+
+#volume-button {
+  width: 48px;
+  height: 48px;
 }
 
 #main-container {
