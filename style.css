@@ -42,14 +42,14 @@ html ,body {
     animation: slideOut 2s forwards;
 }
 
-.container-inner-column {
+.container-column {
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items:  center;
 }
 
-.container-inner-row {
+.container-row {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -80,7 +80,7 @@ html ,body {
     animation: arrowBounce 1.25s infinite;
 }
 
-#header-container.container-inner-row {
+#header-container-inner.container-row {
   justify-content: end;
 }
 
@@ -98,21 +98,18 @@ html ,body {
   height:100%;
 }
 
-#main-container.container-inner-row {
-  display:flex;
-  flex-direction: row;
+#main-container-inner.container-row {
   justify-content: space-between;
+  height:100%;
 }
 
 #profile-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   height:100%;
   flex-grow: 0.30;
 }
 
-#profile-container.container-inner-column {
+#profile-container-inner.container-column{
+  flex-grow: 0.30;
   border-right: 1px solid;
   border-color: #A6A6A8;
   padding-right: 100px;
@@ -146,7 +143,8 @@ li {
   flex-grow: 1;
 }
 
-#content-container.container-inner-column {
+#content-container-inner.container-column {
+  flex-grow:1;
   justify-content: space-evenly;
 }
 
