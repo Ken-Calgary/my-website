@@ -7,13 +7,7 @@ function toggleTheme() {
     var themeButton = document.getElementById("theme-toggler");
     var github = document.getElementById("github-icon");
 
-    if (main.classList.contains("dark-theme")) {
-        main.classList.remove("dark-theme");
-        themeButton.classList.remove("white-font");
-        github.classList.remove("inverse");
-    } else {
-        main.classList.add("dark-theme");
-        themeButton.classList.add("white-font");
-        github.classList.add("inverse");
-    }
+    main.classList.toggle("dark-theme");
+    themeButton.classList.toggle("white-font");
+    github.classList.toggle("inverse");
 }
