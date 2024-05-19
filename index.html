@@ -6,76 +6,26 @@
     <title>Ken's Personal Website</title>
     <link rel = "icon"  type = "image/x-con" href = "./img/favicon.png">
     <link rel="stylesheet" href="style.css">
-    <script src ="js/main.js"></script>
+    <script src ="js/main.js" defer></script>
   </head>
 
   <body>
-    <div id = "welcome-container">
-      <div id = "welcome-container-inner" class = "container-column" >
-        <h1 id = "welcome-text">「Welcome To My Website」</h1>
-        <button id = "welcome-button">
-          <p id = "welcome-arrow" onclick="transition()">&#8595;</p>
-        </button>
+    <nav class ="navbar">
+      <div class="navbar-container">
+        <p class="topic">Home</p>
+        <p class="seperator">|</p>
+        <p class="topic">About Me</p>
+        <p class="seperator">|</p>
+        <p class="topic">Skills</p>
       </div>
-    </div>
-
-    <div id = "main-container" class = "dark-theme">
-      <header id = "header-container">
-        <header id = "header-container-inner" class = "container-row">
-          <button id = "sound-toggler" ><img id = "volume-button" onclick="toggleSound()" src="./img/muted.png"></src></button>
-          <button id = "theme-toggler" class = "white-font" onclick="toggleTheme()">&#9681;</button>
-        </header>
-      </header>
-      <div id = "main-container-inner" class = "container-row">
-        <div id = "profile-container">
-          <div id = "profile-container-inner" class = "container-column">
-            <img id="profile-picture" src="img/pfp.jpg">
-            <h1 id = "name" class="text-centered" >Ken Liu</h1>
-            <h2 id = "title" class="text-centered">Software Engineer Undergraduate</h2>
-            <h1 id = "socials" class = "text-centered"> My Socials </h1>
-            <div id = "social-container" class = "container-row">
-              <a href = "https://www.linkedin.com/in/ken-liu-4746a5263/" target = "_blank" ><img class = "social-icons" src = "img/linkedin.png" alt = "LinkedIn"></a>
-              <a id = "github-icon" class = "inverse" href= "https://github.com/Ken-Calgary" target = "_blank"><img class = "social-icons" src = "img/github.png" alt = "Github"></a>
-              <a href = "https://www.instagram.com/potatoosoul/" target = "_blank"><img class = "social-icons" src = "img/instagram.png" alt = "Instagram"></a>
-              <a href = "https://open.spotify.com/user/osp4pl1ysuzptdgzexvr2kfe0?si=a316609938bd4a34" target = "_blank"><img class = "social-icons" src = "img/spotify.png" alt = "Spotify"></a>
-            </div>
-          </div>
-        </div>
-        <div id = "content-container">
-          <div id="content-container-inner" class = "container-column">
-            <div id = "about-container" class = "container-column">
-              <h1 class = "text-centered"> About Me </h1>
-              <p class = "content-text">
-                An upcoming Software Engineer studying at the University of Calgary.<br>
-                My expected graduation is in the year 2025. My hobbies consist of watching anime, playing games,<br>
-                and learning just about anything.
-              </p>
-            </div>
-            <div id = "skill-container" class = "container-column">
-              <h1 class = "text-centered"> Skills </h1>
-              <p class = "content-text">
-                The main programming langauges I can work with are as of the following:
-              </p>
-              <ul >
-                <b>
-                  <li>Java</li>
-                  <li>C and C++</li>
-                  <li>Python</li>
-                  <li>HTML, CSS and JavaScript</li>
-                </b>
-              </ul>
-              <p class = "content-text">
-                I've also done school projects dealing with relational database program, such as, <b>MySQL</b>. <br>
-                This also includes learning about the <b>Agile</b> model. Not only that but I've dealt with a fair share of <br>
-                backend development, using <b>AWS</b> and <b>Terraform</b>.
-              </p>
-            </div>
-          </div>
-        </div>
+    </nav>
+    <div class = "animation-container">
+      <div class = "bubbles">
+        <!-- Used javascript to generate the bubbles -->
       </div>
-      <footer id = "copyright" class = "container-column">
-        <p id = "copyright-text"> &#169; Copyright 2023 </p>
-      </footer>
+      <div class ="welcome">
+        <p class="title">「Welcome」</p>
+      </div>
     </div>
   </body>
 </html>
