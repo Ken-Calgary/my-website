@@ -6,23 +6,29 @@
 
 body {
   min-height: 100vh;
-  background: #0C192C;
+  background: #121212;
 }
 
 .navbar {
   position: fixed;
   width: 100%;
-  z-index: 1;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  z-index: 2;
 }
 
 .navbar-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  color: #FFFDD0;
-  font-size: 18px;
+  color: #FFFFFF;
+  background-color: #121212;
+  font-size: 24px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  user-select: none;
+}
+
+.topic {
+  cursor: pointer;
 }
 
 .animation-container {
@@ -52,11 +58,26 @@ body {
   z-index: 0;
 }
 
+.bubbles .middle {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: #0AD3FF;
+  margin: 4 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #0AD3FF,
+  0 0 50px #0AD3FF,
+  0 0 100px #0AD3FF;
+  animation: floatMiddle 15s linear infinite;
+  animation-duration: calc(125s/ var(--i));
+  z-index: 0;
+}
+
 .bubbles span:nth-child(even) {
-  background: #F03A47;
-  box-shadow: 0 0 0 10px #F03A47,
-  0 0 50px #F03A47,
-  0 0 100px #F03A47;
+  background: #BB86FC;
+  box-shadow: 0 0 0 10px #BB86FC,
+  0 0 50px #BB86FC,
+  0 0 100px #BB86FC;
 }
 
 .bubbles span:nth-child(3n) {
@@ -84,18 +105,25 @@ body {
   height: 80%;
   color: #FFFFFF;
   position: absolute;
-  z-index: 10;
+  z-index: 1;
   user-select: none;
 }
 
 .title {
   font-size: 128px;
+  text-shadow: 1px 1px 1000px #FFFFFF;
 }
 
 .arrow {
   font-size: 64px;
   cursor: pointer;
+  text-shadow: 1px 1px 1000px #FFFFFF;
   animation: arrowBounce 1.25s infinite;
+}
+
+.about {
+  background-color: #1a1a1a;
+  color: #FFFFFF;
 }
 
 @keyframes float {
@@ -107,6 +135,21 @@ body {
     transform: translateY(-10vh) scale(1);
   }
 }
+
+@keyframes floatMiddle {
+  0%
+  {
+    transform: translateY(100vh) scale(0);
+  }
+  50% {
+    opacity: 0%;
+  }
+
+  70% {
+    opacity: 0%;
+  }
+}
+
 
 @keyframes arrowBounce {
   0% {
