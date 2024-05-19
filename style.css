@@ -10,8 +10,7 @@ body {
 }
 
 .navbar {
-  position: absolute;
-  opacity: 100%;
+  position: fixed;
   width: 100%;
   z-index: 1;
   margin-top: 5px;
@@ -42,28 +41,29 @@ body {
   position: relative;
   width: 50px;
   height: 50px;
-  background: #4FC3DC;
+  background: #0AD3FF;
   margin: 4 4px;
   border-radius: 50%;
-  box-shadow: 0 0 0 10px #4FC3DC44,
-  0 0 50px #4FC3DC,
-  0 0 100px #4FC3DC;
+  box-shadow: 0 0 0 10px #0AD3FF,
+  0 0 50px #0AD3FF,
+  0 0 100px #0AD3FF;
   animation: float 15s linear infinite;
   animation-duration: calc(125s/ var(--i));
+  z-index: 0;
 }
 
 .bubbles span:nth-child(even) {
-  background: #FF2D75;
-  box-shadow: 0 0 0 10px #FF2D75,
-  0 0 50px #FF2D75,
-  0 0 100px #FF2D75;
+  background: #F03A47;
+  box-shadow: 0 0 0 10px #F03A47,
+  0 0 50px #F03A47,
+  0 0 100px #F03A47;
 }
 
 .bubbles span:nth-child(3n) {
-  background: #FFFDD0;
-  box-shadow: 0 0 0 10px #FFFDD0,
-  0 0 50px #FFFDD0,
-  0 0 100px #FFFDD0;
+  background: #78FFD6;
+  box-shadow: 0 0 0 10px #78FFD6,
+  0 0 50px #78FFD6,
+  0 0 100px #78FFD6;
 }
 
 .center-text {
@@ -77,18 +77,25 @@ body {
 
 .welcome {
   display: flex;
-  display: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 75%;
+  height: 80%;
   color: #FFFFFF;
   position: absolute;
-  z-index: 1;
+  z-index: 10;
+  user-select: none;
 }
 
 .title {
-  font-size: 124px;
+  font-size: 128px;
+}
+
+.arrow {
+  font-size: 64px;
+  cursor: pointer;
+  animation: arrowBounce 1.25s infinite;
 }
 
 @keyframes float {
@@ -98,5 +105,17 @@ body {
   }
   100% {
     transform: translateY(-10vh) scale(1);
+  }
+}
+
+@keyframes arrowBounce {
+  0% {
+    transform: translatey(7.5%)
+  }
+  50% {
+    transform: translatey(-7.5%)
+  }
+  100% {
+    transform: translatey(7.5%)
   }
 }
