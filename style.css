@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #D8D8D8;
 }
 
 body {
@@ -22,8 +22,8 @@ body {
   justify-content: space-evenly;
   background-color: #121212;
   font-size: 24px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   user-select: none;
 }
 
@@ -126,9 +126,11 @@ body {
   text-align: center;
 }
 
-.content div:nth-child(odd) {
+.content div {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  padding: 10px 10px 10px 10px;
   background-color: #1A1A1A;
-  border-radius: 25px;
 }
 
 .header {
@@ -136,7 +138,7 @@ body {
 }
 
 .sub-header {
-  font-size: 22px;
+  font-size: 24px;
 }
 
 .about {
@@ -144,6 +146,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  border-radius: 25px;
 }
 
 .info {
@@ -166,7 +169,7 @@ body {
   justify-content: center;
 }
 
-.picture {
+.pfp {
   border-radius: 75%;
   width: 256px;
 }
@@ -174,8 +177,66 @@ body {
 .socials li img{
   width: 50px;
   margin: 10px;
-  color: #FFFFFF;
   filter: invert(1);
+}
+
+.skills {
+  border-radius: 25px;
+}
+
+.skills .sub-header {
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card-container .card {
+  display: block;
+  height: 240px;
+  width: 360px;
+  border: solid 2px #696969;
+  border-radius: 10px;
+}
+
+.card .card-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-bottom: solid 2px  #696969;
+}
+
+.card-title p {
+  font-size: 32px;
+  padding-left: 12px;
+  align-self: center;
+}
+
+.card-title img {
+  margin-left: 12px;
+}
+
+.card .card-picture {
+  height: 48px;
+  width: 48px;
+}
+
+.card .card-info {
+  margin: 0px;
+  padding: 0px;
+  width: 95%;
+}
+
+.card-info p {
+  padding-top: 24px;
+  font-size: 20px;
 }
 
 @keyframes float {
@@ -207,12 +268,12 @@ body {
 
 @keyframes arrowBounce {
   0% {
-    transform: translatey(7.5%)
+    transform: translateY(7.5%)
   }
   50% {
-    transform: translatey(-7.5%)
+    transform: translateY(-7.5%)
   }
   100% {
-    transform: translatey(7.5%)
+    transform: translateY(7.5%)
   }
 }
