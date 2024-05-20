@@ -302,6 +302,31 @@ body {
   margin-left: 128px;
 }
 
+#ending .go-back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ending p {
+  padding: 10px;
+  font-size: 18px;
+}
+
+#ending .arrow {
+  font-size: 32px;
+}
+
+#ending footer {
+  border-top: 1px solid #D8D8D8;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#copyright {
+  text-align: center;
+}
 
 @keyframes float {
   0%
