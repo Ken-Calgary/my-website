@@ -127,13 +127,14 @@ body {
 }
 
 .content div {
-  margin-top: 32px;
+  margin-top: 16px;
   margin-bottom: 32px;
   padding: 10px 10px 10px 10px;
   background-color: #1A1A1A;
 }
 
 .header {
+  padding-top: 16px;
   font-size: 48px;
 }
 
@@ -141,7 +142,7 @@ body {
   font-size: 24px;
 }
 
-.about {
+#about {
   padding: 10px 10px 10px 10px;
   display: flex;
   flex-direction: row;
