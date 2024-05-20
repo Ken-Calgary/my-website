@@ -10,8 +10,8 @@
   </head>
 
   <body>
-    <nav class ="navbar">
-      <div class="navbar-container">
+    <nav id ="navbar">
+      <div id="navbar-container">
         <p class="topic">Home</p>
         <p class="seperator">|</p>
         <p class="topic">About Me</p>
@@ -56,9 +56,10 @@
         </div>
       </div>
 
-      <div class = "skills">
+      <div id = "skills">
         <p class="header">Skills</p> 
           <div class="card-container">
+            <!-- Add more skills here -->
             <div class="card">
               <div class="card-title">
                 <img class="card-picture" alt="C/C++" src="img/skills/C.png">
@@ -70,7 +71,6 @@
                 </p>
               </div>
             </div>
-
             <div class="card">
               <div class="card-title">
                 <img class="card-picture" alt="Python" src="img/skills/Python.png">
@@ -82,7 +82,6 @@
                 </p>
               </div>
             </div>
-
             <div class="card">
               <div class="card-title">
                 <img class="card-picture" alt="Java" src="img/skills/Java.png">
@@ -94,7 +93,6 @@
                 </p>
               </div>
             </div>
-
             <div class="card">
               <div class="card-title">
                 <img class="card-picture" alt="HTML" src="img/skills/HTML.png">
@@ -106,7 +104,6 @@
                 </p>
               </div>
             </div>
-            
             <div class="card">
               <div class="card-title">
                 <img class="card-picture" src="img/skills/Javascript.png">
@@ -118,7 +115,6 @@
                 </p>
               </div>
             </div>
-
             <div class="card">
               <div class="card-title">
                 <img class="card-picture" src="img/skills/React.png">
@@ -130,7 +126,6 @@
                 </p>
               </div>
             </div>
-
             <div class="card">
               <div class="card-title">
                 <img class="card-picture" src="img/skills/Terraform.png">
@@ -142,7 +137,6 @@
                 </p>
               </div>
             </div>
-
             <div class="card">
               <div class="card-title">
                 <img class="card-picture" src="img/skills/Docker.png">
@@ -154,7 +148,6 @@
                 </p>
               </div>
             </div>
-
             <div class="card">
               <div class="card-title">
                 <img class="card-picture" src="img/skills/Linux.png">
@@ -166,7 +159,6 @@
                 </p>
               </div>
             </div>
-
             <div class="card">
               <div class="card-title">
                 <img class="card-picture" src="img/about/github.png">
@@ -178,7 +170,6 @@
                 </p>
               </div>
             </div>
-
             <div class="card">
               <div class="card-title">
                 <img class="card-picture" src="img/skills/MySQL.png">
@@ -190,13 +181,63 @@
                 </p>
               </div>
             </div>
-
+          <!-- End of skills here -->
           </div>
       </div>
 
-      <div class = "projects">
+      <div id = "projects">
         <p class="header">Projects</p>
+        <div id="project-container">
+          <!-- Add more projects here -->
+          <div class="project">
+            <div class="project-info">
+              <div class="project-title">
+                <p class="sub-header">Honkai: Star Rail Wiki Web Scraper</p>
+                <p class="sub-header">(Complete)</p>
+              </div>
+              <div class="project-desc">
+                <ul class="info">
+                  <li>
+                    This is a simple python web scrapper that collects information on the Honkai: Star Rail wiki. I made this program because
+                    I wanted to create an excel sheet to track personal progress on Honkai: Star Rail. A scraper works by curling all the html
+                    elements, then filtering it to take only the specific elements of the webpage and storing it.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-presentation">
+              <video class="project-video right" controls>
+                <source src="./img/projects/starrail_demo.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-presentation">
+              <video class="project-video left" controls>
+                <source src="./img/projects/chess_demo.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="project-info">
+              <div class="project-title">
+                <p class="sub-header">Chess Engine</p>
+                <p class="sub-header">(Ongoing)</p>
+              </div>
+              <div class="project-desc">
+                <ul class="info">
+                  <li>
+                    This chess engine was made using Java. It only works as a chess engine at the moment, but eventually I
+                    do want to add more to make it complete. Such as, adding a main menu, adding some music, play again and etc.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        <!-- End of projects here -->
+        </div>
       </div>
+      <footer>
+        <p class=""></p>
+      </footer>
     </div>
   </body>
 </html>
