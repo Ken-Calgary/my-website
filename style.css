@@ -5,6 +5,29 @@
   color: #D8D8D8;
 }
 
+@media only screen and (max-width:800px) {
+  #body {
+    width: 100vh;
+  }
+
+  .content #projects #project-container .project{
+    flex-direction: column;
+  }
+
+  .content #projects #project-container .project:nth-child(even){
+    flex-direction: column-reverse;
+  }
+  
+  #body .right{
+    margin-right: 0px;
+  }
+
+  #body .left{
+    margin-left: 0px;
+  }
+
+}
+
 body {
   min-height: 100vh;
   background: #121212;
