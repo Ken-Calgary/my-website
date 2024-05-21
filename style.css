@@ -5,9 +5,9 @@
   color: #D8D8D8;
 }
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:1300px) {
   #body {
-    width: 100vh;
+    width: 1300px;
   }
 
   .content #projects #project-container .project{
@@ -17,7 +17,7 @@
   .content #projects #project-container .project:nth-child(even){
     flex-direction: column-reverse;
   }
-  
+
   #body .right{
     margin-right: 0px;
   }
