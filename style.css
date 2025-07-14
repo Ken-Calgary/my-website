@@ -14,6 +14,10 @@
     flex-direction: column;
   }
 
+  .content #experiences #experiences-container .experience {
+    flex-direction: column;
+  }
+
   .content #projects #project-container .project:nth-child(even){
     flex-direction: column-reverse;
   }
@@ -159,10 +163,21 @@ body {
 .header {
   padding-top: 16px;
   font-size: 48px;
+  font-weight: bold;
 }
 
 .sub-header {
   font-size: 24px;
+  font-weight: bold;
+}
+
+.sub-header-small {
+  font-size: 18px;
+}
+
+.company {
+  font-size: 32px;
+  font-weight: bold;
 }
 
 #about {
@@ -317,6 +332,39 @@ body {
   width: 480px;
   height: 320px;
 }
+
+#experiences {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  justify-content: center;
+}
+
+#experiences-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.experience {
+  display: flex;
+  width:85%;
+  flex-direction: row;
+  border: 2px solid #696969;
+  border-radius: 25px;
+}
+
+.experience-info .experience-desc {
+  display: flex;
+  justify-content: center;
+  margin:0px;
+}
+
 
 .right {
   margin-right: 128px;

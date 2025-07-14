@@ -9,7 +9,7 @@ window.mobileCheck = function() {
 if (!window.mobileCheck()) {
     for (i = 0; i <= 42; i++) {
         let randomNum = Math.random() * 30;
-        if (i > 14 && i < 28) {
+        if (i > 12 && i < 30) {
             document.getElementsByClassName("bubbles")[0].innerHTML += `<span class = "center-text middle" style="--i:${randomNum};"></span>\n`;
         } else {
             document.getElementsByClassName("bubbles")[0].innerHTML += `<span class = "center-text" style="--i:${randomNum};"></span>\n`;
