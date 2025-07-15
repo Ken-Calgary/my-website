@@ -30,3 +30,8 @@ function projectsClicked() {
     let elementPosition = document.getElementById("projects").getBoundingClientRect().top;
     scrollToTarget(elementPosition)
 }
+
+function experiencesClicked() {
+    let elementPosition = document.getElementById("experiences").getBoundingClientRect().top;
+    scrollToTarget(elementPosition)
+}
