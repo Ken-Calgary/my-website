@@ -195,6 +195,13 @@ body {
   max-width: 50%;
 }
 
+.info-experience {
+  font-size: 18px;
+  list-style: none;
+  align-content: center;
+  max-width: 75%;
+}
+
 .profile {
   user-select: none;
   margin-top: 32px;
